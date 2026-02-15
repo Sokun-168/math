@@ -85,35 +85,33 @@ body {
   font-family: var(--font-sans);
 }
 
-@layer utilities {
-  .text-glow {
-    text-shadow: 0 0 10px rgba(0, 255, 65, 0.5), 0 0 20px rgba(0, 255, 65, 0.3), 0 0 40px rgba(0, 255, 65, 0.1);
-  }
+@utility text-glow {
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5), 0 0 20px rgba(0, 255, 65, 0.3), 0 0 40px rgba(0, 255, 65, 0.1);
+}
 
-  .text-glow-strong {
-    text-shadow: 0 0 10px rgba(0, 255, 65, 0.7), 0 0 30px rgba(0, 255, 65, 0.5), 0 0 60px rgba(0, 255, 65, 0.2);
-  }
+@utility text-glow-strong {
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.7), 0 0 30px rgba(0, 255, 65, 0.5), 0 0 60px rgba(0, 255, 65, 0.2);
+}
 
-  .box-glow {
-    box-shadow: 0 0 15px rgba(0, 255, 65, 0.15), 0 0 30px rgba(0, 255, 65, 0.05), inset 0 1px 0 rgba(0, 255, 65, 0.1);
-  }
+@utility box-glow {
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.15), 0 0 30px rgba(0, 255, 65, 0.05), inset 0 1px 0 rgba(0, 255, 65, 0.1);
+}
 
-  .box-glow-strong {
-    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3), 0 0 40px rgba(0, 255, 65, 0.1);
-  }
+@utility box-glow-strong {
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3), 0 0 40px rgba(0, 255, 65, 0.1);
+}
 
-  .border-glow {
-    border-color: rgba(0, 255, 65, 0.3);
-  }
+@utility border-glow {
+  border-color: rgba(0, 255, 65, 0.3);
+}
 
-  .grid-bg {
-    background-image:
-      linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
-    background-size: 40px 40px;
-  }
+@utility grid-bg {
+  background-image:
+    linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
 
-  .terminal-bg {
-    background: linear-gradient(180deg, rgba(0, 255, 65, 0.02) 0%, transparent 100%);
-  }
+@utility terminal-bg {
+  background: linear-gradient(180deg, rgba(0, 255, 65, 0.02) 0%, transparent 100%);
 }
